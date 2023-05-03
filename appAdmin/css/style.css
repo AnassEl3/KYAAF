@@ -1,0 +1,166 @@
+:root {
+    --good: #5F78FA;
+    --good-dark: #495fd3;
+    --alert: #face5f;
+    --alert-dark: #d1aa48;
+    --critical: #fa5f5f;
+    --critical-dark: #d34949;
+    --disabled: #a6b3d8;
+    --expired: #bd8251;
+}
+
+html, body {
+    height: 100%;
+}
+
+.bg-login {
+    background-image: url("/assets/img/bg.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.full-height {
+    min-height: 100%;
+    height: 100%;
+}
+
+.scroll-overflow {
+    overflow: scroll;
+}
+
+.scroll-overflow::-webkit-scrollbar {
+    width: 6px;
+    height: 100%;
+}
+
+.scroll-overflow::-webkit-scrollbar-track {
+    background-color: #8ea0fb;
+}
+
+.scroll-overflow::-webkit-scrollbar-thumb {
+    background-color: rgba(53, 65, 132, 0.5);
+    border-radius: 3px;
+}
+
+.scroll-overflow::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(53, 65, 132, 1);
+}
+
+.kyaaf-card {
+    border-radius: 10px;
+}
+
+.text-kyaaf-blue {
+    color: var(--good-dark);
+}
+
+.bg-kyaaf-blue-gradient {
+    background-image: linear-gradient(to bottom left, #5F78FA, #2945D7);
+    background-image: -moz-linear-gradient(to bottom left, #5F78FA, #2945D7);
+    background-image: -o-linear-gradient(to bottom left, #5F78FA, #2945D7);
+    background-image: -webkit-linear-gradient(to bottom left, #5F78FA, #2945D7);
+    background-image: -ms-linear-gradient(to bottom left, #5F78FA, #2945D7);
+}
+
+.bg-kyaaf-red-gradient {
+    background-image: linear-gradient(to bottom left, #E76F6F, #BD5151);
+    background-image: -moz-linear-gradient(to bottom left, #E76F6F, #BD5151);
+    background-image: -o-linear-gradient(to bottom left, #E76F6F, #BD5151);
+    background-image: -webkit-linear-gradient(to bottom left, #E76F6F, #BD5151);
+    background-image: -ms-linear-gradient(to bottom left, #E76F6F, #BD5151);
+}
+
+.bg-kyaaf-green-gradient {
+    background-image: linear-gradient(to bottom left, #73e76f, #5cbd51);
+    background-image: -moz-linear-gradient(to bottom left, #73e76f, #5cbd51);
+    background-image: -o-linear-gradient(to bottom left, #73e76f, #5cbd51);
+    background-image: -webkit-linear-gradient(to bottom left, #73e76f, #5cbd51);
+    background-image: -ms-linear-gradient(to bottom left, #73e76f, #5cbd51);
+}
+
+.bg-kyaaf-orange-gradient {
+    background-image: linear-gradient(to bottom left, #e7a56f, #bd8251);
+    background-image: -moz-linear-gradient(to bottom left, #e7a56f, #bd8251);
+    background-image: -o-linear-gradient(to bottom left, #e7a56f, #bd8251);
+    background-image: -webkit-linear-gradient(to bottom left, #e7a56f, #bd8251);
+    background-image: -ms-linear-gradient(to bottom left, #e7a56f, #bd8251);
+}
+
+.divider {
+    height: 2px;
+    background-color: #324fda;
+}
+
+.activated {
+    border-radius: 50px;
+    color: #5F78FA;
+    background-color: white;
+}
+
+.not-activated {
+    border-radius: 50px;
+    color: white;
+}
+
+.button-deconn {
+    backdrop-filter: blur(10px) brightness(150%);
+}
+
+
+.prime-heading-card {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    padding: 10px;
+    border-top: #5F78FA 4px solid;
+}
+
+.list-item-perso-good {
+    border-radius: 4px;
+    border-left: var(--good) 4px solid;
+    list-style-type: none;
+    background-color: white;
+}
+
+.list-item-perso-disabled {
+    border-radius: 4px;
+    border-left: var(--disabled) 4px solid;
+    list-style-type: none;
+    background-color: white;
+}
+
+.list-item-perso-default {
+    border-radius: 4px;
+    list-style-type: none;
+    background-color: white;
+}
+
+.list-item-perso-alert {
+    border-radius: 4px;
+    border-left: var(--alert) 4px solid;
+    list-style-type: none;
+    background-color: white;
+}
+
+.list-item-perso-critical {
+    border-radius: 4px;
+    border-left: var(--critical) 4px solid;
+    list-style-type: none;
+    background-color: white;
+}
+
+.list-item-perso-expired {
+    border-radius: 4px;
+    border-left: var(--expired) 4px solid;
+    list-style-type: none;
+    background-color: white;
+}
+
+.date-zone {
+    top: 0;
+    left: 10px;
+    padding: 2px;
+    color: #3f3f72;
+    background-color: #b8b8e6;
+    border: #3f3f72 solid 1px;
+}

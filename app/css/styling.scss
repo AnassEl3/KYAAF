@@ -1,0 +1,542 @@
+//-- Bootstrap ----------------------------------------------
+    //Old: #E0B286
+    //New (blue): #312783 
+    //New (orange): #F9B233
+    //new (brown): #3A3A3A
+$primary: #e0b286;
+$secondary: #436994;
+
+@import "../vendor/twbs/bootstrap/scss/bootstrap.scss";
+
+//-- Fonts ----------------------------------------------
+/*----- Ikaros -----*/
+@font-face {
+    font-family: "ikaros";
+    src: local("ikaros"),
+      url("../fonts/ikaros/ikaros.otf") format("truetype");
+}
+@font-face {
+    font-family: "ikaros-light";
+    src: local("ikaros"),
+      url("../fonts/ikaros/ikaros-light.otf") format("truetype");
+}
+
+
+/*----- Titillium web -----*/
+@font-face {
+    font-family: "titilliumWeb";
+    src: local("ikaros"),
+      url("../fonts/titilliumWeb/titilliumWeb.ttf") format("truetype");
+}
+@font-face {
+    font-family: "titilliumWeb-italic";
+    src: local("ikaros"),
+      url("../fonts/titilliumWeb/titilliumWeb-italic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "titilliumWeb-extraLight";
+    src: local("ikaros"),
+      url("../fonts/titilliumWeb/titilliumWeb-extraLight.ttf") format("truetype");
+}
+@font-face {
+    font-family: "titilliumWeb-extraLightItalic";
+    src: local("ikaros"),
+      url("../fonts/titilliumWeb/titilliumWeb-extraLightItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "titilliumWeb-light";
+    src: local("ikaros"),
+      url("../fonts/titilliumWeb/titilliumWeb-light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "titilliumWeb-lightItalic";
+    src: local("ikaros"),
+      url("../fonts/titilliumWeb/titilliumWeb-lightItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "titilliumWeb-semiBold";
+    src: local("ikaros"),
+      url("../fonts/titilliumWeb/titilliumWeb-semiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "titilliumWeb-semiBoldItalic";
+    src: local("ikaros"),
+      url("../fonts/titilliumWeb/titilliumWeb-semiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "titilliumWeb-bold";
+    src: local("ikaros"),
+      url("../fonts/titilliumWeb/titilliumWeb-bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "titilliumWeb-boldItalic";
+    src: local("ikaros"),
+      url("../fonts/titilliumWeb/titilliumWeb-boldItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: "titilliumWeb-black";
+    src: local("ikaros"),
+      url("../fonts/titilliumWeb/titilliumWeb-black.ttf") format("truetype");
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+//-- Scroolbar ----------------------------------------------
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $primary;
+}
+//-- Shared classes ----------------------------------------------
+body{
+    background-color: #E5E5E5;
+}
+.btn{
+    font-family: "titilliumWeb-semiBold";
+    cursor: pointer;
+}
+h1, h2, h3, h4, h5{
+    font-family: "titilliumWeb-bold";
+}
+p{
+    font-family: "titilliumWeb-light";
+}
+img{
+    object-fit: cover;
+}
+select{
+    cursor: pointer;
+}
+input[type=date]{
+    cursor: pointer;
+}
+.sectionHeader{
+    background-color: $primary;
+    h5{
+        color: white;
+    }
+}
+
+//-- Navigation ----------------------------------------------
+nav{
+    position: fixed;
+    .navContainer{
+        background-color: rgba(230, 227, 227, 0.5);
+        backdrop-filter: blur(15px); 
+        -webkit-backdrop-filter: blur(15px);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        .kyaafLogo{
+            height: 50px;
+            backdrop-filter: blur(0px); 
+        }
+        .options{
+            a{
+                border: 2px solid $primary;
+                border-top: 0px;
+                border-right: 0px;
+                border-left: 0px;
+                border-radius: 0px;
+            }
+        }
+        .accountImg{
+            width: 40px;
+            height: 40px;
+            background-color: #1E54E0;
+        }
+        .miniNavIcon{
+            font-size: 2em;
+        }
+    }
+}
+//-- Authentication ----------------------------------------------
+.authentication{
+    h5{
+        font-family: "titilliumWeb-bold";
+    }
+    .kyaafLogo{
+        height: 100%;
+
+    }
+}
+//-- Favorites ----------------------------------------------
+.registration{
+    padding-top: 100px;
+    min-height: 100vh;
+    .container{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .label{
+        font-family: "titilliumWeb-semiBold"; 
+    }
+    .registrationAvatarDisplayer{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+//-- Footer ----------------------------------------------
+footer{
+    bottom:0;
+    h5{
+        font-family: "titilliumWeb"; 
+    }
+}
+//-- 404 ----------------------------------------------
+.page404{
+    img{
+        width: 200px;
+    }
+}
+//-- Loading ----------------------------------------------
+.loading{
+    position: fixed;
+    background-color: #E5E5E5;
+    z-index: 1000;
+    img{
+        height: 150px;
+    }
+}
+//-- Header ----------------------------------------------
+header{
+    background-image: url("../media/images/background_header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    p{
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: "titilliumWeb-black";
+        font-size: 3em;
+    }
+    .formDiv{
+        background-color: #E5E5E5;
+    }
+}
+//-- Categories ----------------------------------------------
+.categories{
+    .categorie{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 200px;
+        background-color: #1E54E0;
+        .categorieTitle{
+            font-family: "titilliumWeb-semiBold";
+            font-size: 1.2em;
+            img{
+                width: 100px;
+            }
+        }
+    }
+}
+//-- Last announcement ----------------------------------------------
+.lastAnnouncements{
+    .ann{
+        background-color: white;
+        max-width: 230px;
+        .thumbnail{
+            width: 200px;
+            height: 200px;
+        }
+        .h5{
+            display: inline-block;
+            width: 180px;
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+        }
+    }
+}
+//-- Definition ----------------------------------------------
+.definition{
+    .definitionContainer{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        h1{
+            font-size: 1.5;
+        }
+        img{
+            width: 200px;
+        }
+    }
+}
+//-- Search Bar ----------------------------------------------
+.searchBar{
+    padding-top: 100px;
+    .container{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+//-- Result ----------------------------------------------
+.result{
+    min-height: 100vh;
+    .container{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+//-- Mini-Announcement ----------------------------------------------
+.miniAnnouncement{
+    border-left: 10px solid $primary;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 700px;
+    .miniThumbnail{
+        width: 150px;
+        height: 150px;
+        //border: 2px solid $primary;
+
+    }
+    .miniAnnonceTitle{
+        font-family: "titilliumWeb-bold";
+    }
+    p{
+        font-family: "titilliumWeb-light";
+    }
+    .miniCategorie{
+        font-family: "titilliumWeb";
+    }
+    .miniType{
+        font-family: "titilliumWeb";
+    }
+}
+//-- Announcement ----------------------------------------------
+.announcement{
+    padding-top: 100px;
+    min-height: 100vh;
+    .container{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .thumbnail{
+        width: 250px;
+        height: 250px;
+    }
+    .announcementLabel{
+        font-family: "titilliumWeb-light";
+    }
+    .announcementFav{
+        h5{
+            color: $primary;
+            font-size: 3em;
+            cursor: pointer;
+
+        }
+    }
+    .announcer{
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        h5{
+            font-size: .9em;
+        }
+    }
+    .details{
+        a{
+            font-family: "titilliumWeb-bold";
+            color: white;
+            cursor: pointer;
+        }
+        .selected{
+            background-color: white;
+            color: $primary;
+            
+        }
+        .hidden{
+            display: none;
+        }
+        .detailsBody{
+            border: 1px solid $primary;
+            border-top: 0px;
+            .description{
+                border: none;
+                textarea{
+                    height: 200px;
+                    resize: none;
+                    border: none;
+                }
+            }
+        }
+        .contactContainer{
+            border: 1px solid black;
+            span{
+                font-size: 3em;
+            }
+        }
+    }
+    #announcementImagesCarousel{
+        background-color: #00000033;
+        border: 3px solid $primary;
+        height: 300px;
+        .carousel-inner{      
+            height: 300px;
+            .announcementCarouselImage{
+                margin: auto;
+                max-height: 296px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+//-- Announcer ----------------------------------------------
+.announcerInfo{
+    padding-top: 100px;
+    .container{
+        .roundedBackground{
+            border-radius: 50px 50px 0px 0px;
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        
+    }
+}
+.listAnouncements{
+    min-height: 100vh;
+    .container{
+    }
+}
+//-- Account Infos ----------------------------------------------
+.accountInfo{
+    padding-top: 100px;
+    min-height: 100vh;
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    .container{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+}
+//-- My announcements ----------------------------------------------
+.myAnnouncements{
+    padding-top: 100px;
+    min-height: 100vh;
+    .container{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .activated{
+        background-color: #5cb85c1e;
+    }
+    .deactivated{
+        background-color: #5bc0de1e;
+    }
+    .rejected{
+        background-color: #d9534f1e;
+    }
+    .expired{
+        background-color: #d9534f1e;
+    }
+    .processed{
+        background-color: #f0ad4e1e;
+    }
+}
+//-- My announcement ----------------------------------------------
+.myAnnouncement{
+    padding-top: 100px;
+    min-height: 100vh;
+    .container{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .thumbnail{
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .description{
+        textarea{
+            height: 200px;
+            resize: none;
+        }
+    }
+    .localisation{
+        iframe{
+            height: 150px;
+        }
+    }
+    .images{
+        .image{
+            width: 200px;
+            
+        }
+    }
+}
+//-- Mini my announcement ----------------------------------------------
+.miniMyAnnouncement{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    //border: 1px solid rgb(0, 0, 0);
+    .miniThumbnail{
+        width: 150px;
+        height: 150px;
+        
+    }
+    .title{
+        font-family: "titilliumWeb-bold";
+    }
+}
+//-- Modify announcement ----------------------------------------------
+.modifyAnnouncement{
+    padding-top: 100px;
+    min-height: 100vh;
+    .container{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+    }
+    textarea{
+        height: 200px;
+        resize: none;
+    }
+    .thumbnail{
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .images{
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+//-- Add announcement ----------------------------------------------
+.addAnnouncement{
+    padding-top: 100px;
+    min-height: 100vh;
+    .container{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+    }
+    textarea{
+        height: 200px;
+        resize: none;
+    }
+    .thumbnail{
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .images{
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+//-- Favorites ----------------------------------------------
+.favorites{
+    padding-top: 100px;
+    min-height: 100vh;
+    .container{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}

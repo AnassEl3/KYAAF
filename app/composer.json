@@ -1,0 +1,17 @@
+{
+    "name": "anass/kyaaf",
+    "autoload": {
+        "psr-4": {
+            "Anass\\Kyaaf\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AnassEl",
+            "email": "anasselyaagoubi3@gmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "4.3.0"
+    }
+}
